@@ -1,5 +1,5 @@
 import React from 'react'
-import food9 from "../images/Foods/food10.jpg"
+import food9 from "../images/Foods/food1.jpg"
 const ImproveSkills = () => {
   const list=[
     "Learn new recepies",
