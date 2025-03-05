@@ -1,6 +1,14 @@
 import React from 'react'
-import food9 from "../images/Foods/food9.jpg"
+import food9 from "../images/Foods/food10.jpg"
 const ImproveSkills = () => {
+  const list=[
+    "Learn new recepies",
+    "Experiment with food",
+    "Write your own recepies",
+    "Know nutrition facts ",
+    "Get cooking tips",
+    "Get ranked"
+  ]
   return (
     <div className="section improve-skills">
    <div className="col img">
@@ -9,6 +17,12 @@ const ImproveSkills = () => {
     </div>
     <div className="col typography">
        <h1 className='title'>Improve Your Culinary Skills</h1>
+       {
+        list.map((item,index)=>
+        (
+          <p className='skill-item' key={index}>{item}</p>
+        ))
+       }
        <button className='btn'>signup now</button>
     
    </div>
