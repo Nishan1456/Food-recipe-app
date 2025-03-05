@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomImage from './CustomImage'
 import food1 from "../images/Foods/food.jpg"
-import food2 from "../images/Foods/food1.jpg"
+import food2 from "../images/Foods/food10.jpg"
 import food3 from "../images/Foods/food2.jpg"
 import food4 from "../images/Foods/food3.jpg"
 import food5 from "../images/Foods/food4.jpg"
@@ -27,7 +27,7 @@ const HeroSection = () => {
     <div className="section hero">
         <div className="col typography">
            <h1 className='title'>What Are We About</h1>
-           <p className='info'>FoodMania is a place where you can please your soul and tummy wiht delicious food recepies of all cuisine. Our services is absolutely free. So start exploring now.</p>
+           <p className='info'>FoodMania is a place where you can please your soul and tummy with delicious food recepies of all cuisine. Our services is absolutely free. So start exploring now.</p>
            <button className='btn'>explore now</button>
         
        </div>
