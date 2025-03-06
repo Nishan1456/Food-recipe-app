@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Sidebar from './Sidebar';
 import {faHome,faList,faCog} from "@fortawesome/free-solid-svg-icons"
+import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const links=[
         {
             name:"Home",
-            path:"/home",
+            path:"/",
             icon: faHome
         },
         {
@@ -24,14 +25,15 @@ const Navbar = () => {
         setShowSidebar(false);
     }
     const[showSidebar,setShowSidebar]=useState(false);
+    const location=useLocation();
   return (
    <>
     <div className="navbar container">
-      <a href="#!" className='logo'>F<span>oo</span>dMania</a>
+      <Link to="/" className='logo'>F<span>oo</span>dMania</Link>
       <div className="nav-links">
         {links.map(link=>
             (
-                <a href="#!" key={link.name}>{link.name}</a>
+                <Link className={location.pathname===link.path?"active":""} to={link.path} key={link.name}>{link.name}</Link>
             )
         )}
       </div>
